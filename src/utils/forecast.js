@@ -8,7 +8,7 @@ const forecast = async (longtitude, latitude) => {
             return data = {
                 nameOfPlace: result.data.location.name,
                 country: result.data.location.country,
-                currentTemp: "temp is " + result.data.current.temperature + "C but it fills like " + result.data.current.feelslike + "C",
+                currentTemp: result.data.current.weather_descriptions[0] + " ,temp is " + result.data.current.temperature + "C but it fills like " + result.data.current.feelslike + "C",
 
             }
 
